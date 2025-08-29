@@ -19,4 +19,7 @@ A mobile application designed to help users track their income, expenses, and ov
 - Platform: Android
 
 # Installation & Usage
-1. 
+1. Clone the repository: git clone https://github.com/SenaraJayaweera/Financial-Tracker-Mobile-App.git
+2. Open the project in Android Studio.
+3. Build and run the app on an emulator or Android device.
+4. Use the app.
