@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.cashflow_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CashFlow_App"
+        tools:replace="android:appComponentFactory"
+        tools:targetApi="31">
+
+        <!-- Example of an exported activity with the 'exported' attribute set -->
+        <activity
+            android:name=".ItemCategorySummery"
+            android:exported="false" />
+
+        <activity
+            android:name=".BudgetScreen"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".EditTransaction"
+            android:exported="false" />
+
+        <activity
+            android:name=".TransactionList"
+            android:exported="false" />
+
+        <activity
+            android:name=".AddTransaction"
+            android:exported="false" />
+
+        <activity
+            android:name=".ProfileScreen"
+            android:exported="false" />
+
+        <activity
+            android:name=".HomeScreen"
+            android:exported="false" />
+
+        <activity
+            android:name=".SignUpScreen"
+            android:exported="false" />
+
+        <activity
+            android:name=".SignInScreen"
+            android:exported="false" />
+
+        <activity
+            android:name=".AuthenticationScreen"
+            android:exported="false" />
+
+        <activity
+            android:name=".OnBoardScreen3"
+            android:exported="false" />
+
+        <activity
+            android:name=".OnBoardScreen2"
+            android:exported="false" />
+
+        <activity
+            android:name=".OnBoardScreen"
+            android:exported="false" />
+
+        <!-- Main activity with exported set to true (it should be accessible to launch the app) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Example BroadcastReceiver, ensure exported attribute is set -->
+
+
+
+    </application>
+
+</manifest>

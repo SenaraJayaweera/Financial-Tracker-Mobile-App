@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="448dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/yellow"
+        android:text="Monthly Budget Overview"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <com.anychart.AnyChartView
+        android:id="@+id/any_chart_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="16dp">
+
+    </com.anychart.AnyChartView>
+
+    <!-- Detailed Monthly Budget Summary -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/material_dynamic_neutral80"
+        android:backgroundTintMode="src_over"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewTotalBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Total Budget: $0.00"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTotalIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Total Income: $0.00"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTotalExpenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Total Expenses: $0.00"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewRemainingBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Remaining Balance: $0.00"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewBudgetWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:background="@color/yellow">
+
+        <ImageView
+            android:id="@+id/imageViewhome"
+            android:layout_width="67dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="5dp"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/imageViewtransaction"
+            android:layout_width="75dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="120dp"
+            app:srcCompat="@drawable/transaction" />
+
+        <ImageView
+            android:id="@+id/imageViewbudget"
+            android:layout_width="75dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="250dp"
+            app:srcCompat="@drawable/budget" />
+
+        <ImageView
+            android:id="@+id/imageViewprofile"
+            android:layout_width="75dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="350dp"
+            app:srcCompat="@drawable/profile" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</LinearLayout>

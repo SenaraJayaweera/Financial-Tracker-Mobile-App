@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    android:orientation="vertical">
+
+    <!-- Title for the form -->
+    <TextView
+        android:id="@+id/tvTransactionsTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:text="@string/addtransaction"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <!-- Radio Buttons for selecting Income or Expense -->
+    <RadioGroup
+        android:id="@+id/transaction_type_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/income_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:checked="true"
+            android:text="Income"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/expense_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:text="Expense"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <!-- Amount Input Field -->
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="419dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTexttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="Enter Title"
+        android:inputType="text"
+        android:textColorHint="@color/gray"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="Enter Amount"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/amount_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/gray"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Category Selection -->
+    <TextView
+        android:id="@+id/category_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="Category"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="417dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:entries="@array/ExpenseCategory" />
+
+    <!-- Date Selection -->
+    <TextView
+        android:id="@+id/date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="12dp"
+        android:text="Select Date"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/save_transaction_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/addtransaction"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/yellow">
+
+        <ImageView
+            android:id="@+id/imageViewhome"
+            android:layout_width="67dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="5dp"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/imageViewtransaction"
+            android:layout_width="75dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="120dp"
+            app:srcCompat="@drawable/transaction" />
+
+        <ImageView
+            android:id="@+id/imageViewbudget"
+            android:layout_width="75dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="250dp"
+            app:srcCompat="@drawable/budget" />
+
+        <ImageView
+            android:id="@+id/imageViewprofile"
+            android:layout_width="75dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="350dp"
+            app:srcCompat="@drawable/profile" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>

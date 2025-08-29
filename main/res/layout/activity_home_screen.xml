@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white1"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:background="@color/yellow" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="424dp"
+                    android:layout_height="273dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/material_dynamic_primary80"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.958"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.096"
+                        app:srcCompat="@drawable/chip" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="153dp"
+                        android:layout_height="85dp"
+                        android:layout_marginEnd="181dp"
+                        android:layout_marginBottom="144dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/visa" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="301dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/cardnumber"
+                        android:textColor="@color/black"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.044"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.465" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/expieary"
+                        android:textColor="@color/black"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.746"
+                        app:layout_constraintStart_toEndOf="@+id/textView4"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                        app:layout_constraintVertical_bias="0.155" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="350dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginEnd="342dp"
+                        android:layout_marginBottom="63dp"
+                        android:text="@string/balance"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/textViewbudget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="201dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginEnd="199dp"
+                        android:layout_marginBottom="25dp"
+                        android:text="0.00"
+                        android:textColor="@color/black"
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.394"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6"
+                        app:layout_constraintVertical_bias="0.625" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btnViewSummary"
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="107dp"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/blue"
+                android:text="View Expense Summary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/material_dynamic_primary80"
+                android:text="Recent Transactions"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerTransactions"
+                android:layout_width="match_parent"
+                android:layout_height="440dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="460dp"
+                android:layout_height="90dp"
+                android:background="@color/yellow">
+
+                <ImageView
+                    android:id="@+id/imageViewhome"
+                    android:layout_width="67dp"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="5dp"
+                    app:srcCompat="@drawable/home" />
+
+                <ImageView
+                    android:id="@+id/imageViewtransaction"
+                    android:layout_width="75dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="120dp"
+                    app:srcCompat="@drawable/transaction" />
+
+                <ImageView
+                    android:id="@+id/imageViewbudget"
+                    android:layout_width="75dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="250dp"
+                    app:srcCompat="@drawable/budget" />
+
+                <ImageView
+                    android:id="@+id/imageViewprofile"
+                    android:layout_width="75dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="350dp"
+                    app:srcCompat="@drawable/profile" />
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

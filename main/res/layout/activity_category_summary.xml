@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/yellow"
+        android:text="Expense Summary by Category"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewback2"
+        android:layout_width="76dp"
+        android:layout_height="47dp"
+        app:srcCompat="@drawable/arrow" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category_summary_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white1" />
+</LinearLayout>

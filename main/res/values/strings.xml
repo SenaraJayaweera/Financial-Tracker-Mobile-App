@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">CashFlow_App</string>
+
+    <string name="logo">CashFlow</string>
+
+    <string name="onboard1text1">Take Control of Your Money</string>
+    <string name="onboard1text2">Track your income, expenses, and savings — all in one simple, powerful app.</string>
+    <string name="btnNext">Continue</string>
+
+    <string name="onboard2text1">Build Smarter Budgets</string>
+    <string name="onboard2text2">Set budgets, get spending insights, and make better financial decisions with ease.</string>
+    <string name="btnContinue">Next</string>
+
+    <string name="onboard3text1">Secure &amp; Personalized</string>
+    <string name="onboard3text2">Your data is safe with us. Enjoy a personal finance tracker built just for you.</string>
+    <string name="btnGetStarted">Get Started</string>
+
+    <string name="btnSignin">Sign In</string>
+    <string name="bttnSignUp">Sign Up</string>
+
+    <string name="signupname">Name : </string>
+    <string name="signupnamehint">Enter your name</string>
+    <string name="signupemail">Email : </string>
+    <string name="signupemailhint">abc@gmail.com</string>
+    <string name="signupPassword">Password : </string>
+    <string name="signuppasswordhint">Enter your password</string>
+    <string name="signupconfirmpassword">Confirm Password : </string>
+    <string name="signupconfirmpasswordhint">Re-enter password</string>
+    <string name="termscondition">I agree to the terms &amp; conditions</string>
+    <string name="signUptextalreadyAcc">If already have an account? </string>
+    <string name="signupBTN">Sign Up</string>
+    <string name="signupsignInBTN">SIgn In</string>
+
+    <string name="email">Email : </string>
+    <string name="Password">Password : </string>
+    <string name="signinbtn">Sign In</string>
+    <string name="notHaveAccount">If you don\'t have an account? </string>
+    <string name="signupbtn">Sign Up</string>
+    <string name="forgetPassword">Forgot Password?</string>
+    <string name="emailHint">abc@gmail.com</string>
+    <string name="passwordHint">Enter your password</string>
+
+    <string name="welcome">Hello, welcome to CashFlow!</string>
+    <string name="cardnumber">1234-5678-9012-3456</string>
+    <string name="expieary">08/29</string>
+    <string name="balance">My Balance</string>
+
+    <string name="addtransaction">Add Transaction</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="title">Title :</string>
+    <string name="amount">Amount :</string>
+    <string name="category">Category :</string>
+    <string name="btnsaveincome">Save</string>
+    <string name="btncancel">Cancel</string>
+
+
+    <string-array name="ExpenseCategory">
+        <item></item>
+        <item>Salary</item>
+        <item>Bill</item>
+        <item>Education</item>
+        <item>Entertainment</item>
+        <item>Food</item>
+        <item>Shopping</item>
+        <item>Traveling</item>
+        <item>Personal</item>
+        <item>Medical</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="details">Transaction Details</string>
+
+    <string name="profile">Profile Details</string>
+
+    <string name="signout">SignOut</string>
+    <string name="deleteacc">Delete Account</string>
+    <string name="datehint">Date :</string>
+
+    <string-array name="currency_options">
+        <item>$ - US Dollar (USD)</item>
+        <item>Rs - Sri Lankan Rupee (LKR)</item>
+        <item>€ - Euro (EUR)</item>
+        <item>£ - British Pound (GBP)</item>
+        <item>₹ - Indian Rupee (INR)</item>
+    </string-array>
+
+
+
+</resources>
